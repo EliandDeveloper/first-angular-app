@@ -1,1 +1,12 @@
-<p>roles works!</p>
+
+<p>The boolean <b>isNotAvaliable</b> has a value of {{isNotAvaliable.valueOf()}}</p>
+
+<ol>
+    @for(rol of roles; track rol){
+        <li>{{rol}}</li>
+    }
+</ol>
+
+@if(isNotAvaliable){
+    <button type="button" [disabled]="isNotAvaliable">Hide</button>
+}
